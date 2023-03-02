@@ -1,0 +1,203 @@
+<html>
+<head>
+<header>
+	
+	<p>Lab Calculator</p>
+	
+	<nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Experiments</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        </header>
+  
+	
+	
+	
+	<style>
+	
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  background-color:white;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+	
+	header{
+	color:white;
+	background-color:#2576b0;
+	padding:20px;
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	th,
+	td {
+		padding: 5px;
+		text-align: left;
+	}
+	</style>
+
+<style>
+
+h1{
+	color:white;
+	background-color:#2576b0;
+	padding:20px;
+	}
+
+#player-size {
+  /* comment below line for responsive 16:9 full screen */
+  width: 100%;
+  /* only need to specify width since 16:9 ratio is  
+     preserved / automatically applied */
+}
+
+#cropping-div {
+  overflow: hidden;
+}
+
+#div-to-crop {
+  overflow: hidden;
+  margin-top: -51%;
+  margin-bottom: -20%;
+}
+
+#player-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 128.25%;
+}
+
+#player {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 124%;
+  
+}
+
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: 14px/20px Noto Sans Bengali,sans-serif;
+    margin: 16px 0 15px;
+    width: 100%;
+}
+
+
+</style>
+
+<script>
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement("script");
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+
+
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("player", {
+    host: "https://www.youtube.com",
+    /* no need to specify player 
+    size here since it is handled 
+    by the player-size div */
+    videoId: "7YZCUpnaTfg",
+    playerVars: {
+      enablejsapi: 1,
+      playsinline: 1,
+      start: 0,
+      disablekb: 0
+    },
+    events: {
+      onStateChange: onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerStateChange(event) {
+  console.log("player state: " + player.getPlayerState());
+}
+
+function updateVideoId() {
+  let videoId = document.getElementById("videoId").value;
+  
+    const myArray = videoId.split("youtu.be/");
+    var final = myArray[1];
+  
+  player.loadVideoById(final, -1);
+}
+
+function stopVideo() {
+  player.stopVideo();
+}
+
+</script>
+
+
+<!-- JavaScript code to set the iframe's src based on user input -->
+
+
+
+</head>
+  
+  <body>
+  
+  
+  
+  
+  
+<!-- HTML code for the input field where the user can enter a link -->
+
+
+ 
+
+            
+
+ <div id="player-size" style="">
+      <div id="cropping-div" style="">
+        <div id="div-to-crop" style="">
+          <div id="player-wrapper">
+            <!-- 1. The <iframe> (and video 
+            player) will replace this <div> 
+            tag. -->
+            <div id="player"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  
+
+    </body>
+
+</html>
+
+
