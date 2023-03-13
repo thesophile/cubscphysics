@@ -58,14 +58,15 @@ nav li a {
 	}
 	</style>
 
-<style>
 
-h1{
+<style>
+  
+  h1{
 	color:white;
 	background-color:#2576b0;
 	padding:20px;
 	}
-
+  
 #player-size {
   /* comment below line for responsive 16:9 full screen */
   width: 100%;
@@ -159,6 +160,37 @@ function stopVideo() {
   player.stopVideo();
 }
 
+
+
+function openFullscreen() {
+
+elem = document.getElementById("player-size");
+
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  } 
+}
+
+
+//adjust size for mobile screens
+ window.onload = function() {
+  
+  if (window.matchMedia("(max-width: 767px)").matches)
+{
+// The viewport is less than 768 pixels wide
+
+document.getElementById("player-size").style.width="100%";
+}
+  
+  }
+
+  
+
+
 </script>
 
 
@@ -168,20 +200,18 @@ function stopVideo() {
 
 </head>
   
-  <body>
+<body>
   
   
-  
-  
-  
-<!-- HTML code for the input field where the user can enter a link -->
+ <!-- HTML code for the input field where the user can enter a link -->
 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- 
+       
 
-            
+        <br><br>
 
- <div id="player-size" style="">
+ <div id="player-size" style="width:50%; margin:auto;">
       <div id="cropping-div" style="">
         <div id="div-to-crop" style="">
           <div id="player-wrapper">
@@ -192,12 +222,26 @@ function stopVideo() {
           </div>
         </div>
       </div>
-    </div>
+      
+      <button class="myDiv" onclick="openFullscreen();" style=" position:relative; right:0px; width:30px; height:30px; background-color:#FFFFFF;  margin:1px;" >  ⛶  </button> 
+      <span class="hide">View in Fullscreen mode</span>
+      
+  </div>
    
-  
+   
 
-    </body>
+<style>
+    .hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  
+}
+</style>
+   
+</body>
 
 </html>
-
 
