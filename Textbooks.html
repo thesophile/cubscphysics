@@ -2,15 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-<script src="https://api.countapi.xyz/hit/https://abhinavpb-249.github.io/CU-Bsc-Physics/Textbooks.html/visits?callback=liveViews" async></script>
+<script async src="https://api.countapi.xyz/hit/abhinavpb-249.github.io/7ab1c230-736d-4f7d-9340-4035067f5c84?callback=websiteVisits"></script>
 </head>
 
 <body>
 
+<div style="position:absolute; right:10px;">Views: <span id="visits"></span></div>
 
-<p class="has-tertiary-background-color has-background">For copyright issues, contact me at 8589903513.Telegram/whatsapp/Call</p>
-This page got <span id="visits"></span>
-<hr />
 
 <h2 class="has-secondary-color has-foreground-background-color has-text-color has-background"><b>1.Syllabus</b></h2>
 
@@ -82,15 +80,17 @@ Download all textbooks in Telegram
 
 <script>
 
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
+
 function load(id){
 
 
 window.location.href = "https://abhinavpb-249.github.io/CU-Bsc-Physics/sem"+id+".html";
 }
 
-function liveViews(response) {
-    document.getElementById('visits').innerText = response.value;
-}
+
 </script>
 
 
