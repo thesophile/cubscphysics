@@ -6,7 +6,7 @@
 
 	<header>
 	
-	<h1>Lab Calculator</h1>
+	<h1>Bsc Physics Calicut University </h1>
 	
 	<nav>
             <ul>
@@ -24,6 +24,7 @@
 
 <style>
   
+
   
 #player-size {
   /* comment below line for responsive 16:9 full screen */
@@ -67,6 +68,25 @@ table {
 
 
 </style>
+
+<!--mobile view -->	
+<script>
+window.onload = function() 
+
+{
+  
+  if (window.matchMedia("(max-width: 767px)").matches)
+  {  
+  
+     var all = document.getElementsByTagName("li");
+
+     for (var i=0, max=all.length; i < max; i++) 
+                     { all[i].style.display="block"; }
+   }      
+         
+}    
+</script>	
+
 
 <script>
 // 2. This code loads the IFrame Player API code asynchronously.
