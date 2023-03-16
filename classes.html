@@ -2,6 +2,24 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head >
+
+<!--mobile view -->	
+<script>
+window.onload = function() 
+
+{
+  
+  if (window.matchMedia("(max-width: 767px)").matches)
+  {  
+  
+     var all = document.getElementsByTagName("li");
+
+     for (var i=0, max=all.length; i < max; i++) 
+                     { all[i].style.display="block"; }
+   }      
+         
+}    
+</script>	
 <link rel="stylesheet" href="mystyle.css">
 
 	<header>
@@ -69,23 +87,7 @@ table {
 
 </style>
 
-<!--mobile view -->	
-<script>
-window.onload = function() 
 
-{
-  
-  if (window.matchMedia("(max-width: 767px)").matches)
-  {  
-  
-     var all = document.getElementsByTagName("li");
-
-     for (var i=0, max=all.length; i < max; i++) 
-                     { all[i].style.display="block"; }
-   }      
-         
-}    
-</script>	
 
 
 <script>

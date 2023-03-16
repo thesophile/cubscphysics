@@ -2,7 +2,23 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head >
+<!--mobile view -->	
+ <script>
+    window.onload = function() 
 
+    {
+  
+       if (window.matchMedia("(max-width: 767px)").matches)
+        {  
+  
+           var all = document.getElementsByTagName("li");
+
+           for (var i=0, max=all.length; i < max; i++) 
+                     { all[i].style.display="block"; }
+        }      
+         
+    }    
+ </script>	
 <link rel="stylesheet" href="mystyle.css">
 	<header>
 	
@@ -27,23 +43,7 @@
 
 <script async src="https://api.countapi.xyz/hit/abhinavpb-249.github.io/7ab1c230-736d-4f7d-9340-4035067f5c84?callback=websiteVisits"></script>
 
-<!--mobile view -->	
- <script>
-    window.onload = function() 
 
-    {
-  
-       if (window.matchMedia("(max-width: 767px)").matches)
-        {  
-  
-           var all = document.getElementsByTagName("li");
-
-           for (var i=0, max=all.length; i < max; i++) 
-                     { all[i].style.display="block"; }
-        }      
-         
-    }    
- </script>	
 
 
 </head>
