@@ -5,10 +5,24 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  display: inline-block;
-  background-color:white;
-}
+    /* small screen, hidden by default */
+@media only screen and (max-width: 770px ) 
+    {
+    nav li {
+            display: block;
+            background-color:white;
+            }
+
+    }
+
+/* large screen, shown by default */
+@media only screen and (min-width: 771px ) 
+    {
+    nav li {
+            display: inline-block;
+            background-color:white;
+           }
+    }
 
 .active {
     background-color: lightgrey;
