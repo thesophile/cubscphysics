@@ -1,8 +1,51 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <h1>Semester 1</h1>
-  </head>
-  <body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head >
+<!--mobile view -->	
+<script>
+window.onload = function() 
+
+{
+  
+  if (window.matchMedia("(max-width: 767px)").matches)
+  {  
+  
+     var all = document.getElementsByTagName("li");
+
+     for (var i=0, max=all.length; i < max; i++) 
+                     { all[i].style.display="block"; }
+   }      
+         
+}    
+</script>	
+<link rel="stylesheet" href="mystyle.css">
+
+	<header>
+	
+	<h1>Bsc Physics Calicut University </h1>
+	
+	<nav>
+            <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+                <li class="active"><a href="Textbooks.html">Books</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        </header>
+
+ 
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+</head>
+
+
+<body>
+<h2>Semester 1</h2>
    
  
 
