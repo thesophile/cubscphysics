@@ -4,22 +4,29 @@
 <head >
 
 <!--mobile view -->	
-<script>
-window.onload = function() 
+ <style>
+    /* small screen, hidden by default */
+@media only screen and (max-width: 770px ) 
+    {
+    nav li {
+            display: inline-block;
+            background-color:white;
+            }
 
-{
-  
-  if (window.matchMedia("(max-width: 767px)").matches)
-  {  
-  
-     var all = document.getElementsByTagName("li");
+    }
 
-     for (var i=0, max=all.length; i < max; i++) 
-                     { all[i].style.display="block"; }
-   }      
-         
-}    
-</script>	
+/* large screen, shown by default */
+@media only screen and (min-width: 771px ) 
+    {
+    nav li {
+            display: block;
+            background-color:white;
+           }
+    }
+
+ </style>	
+
+	
 <link rel="stylesheet" href="mystyle.css">
 
 	<header>
