@@ -84,16 +84,36 @@ Download all textbooks in Telegram
  .box{
    text-align:center;
    border-radius:5px;
-   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   }
   
 
-  .btn
+  
+  
+  /*small screen*/
+@media only screen and (max-width: 770px ) 
+    {
+        .btn
+  {color:white;
+  background:#2a8fa3; 
+  text-align:center; 
+  border-radius:7px; 
+  width: 90%; 
+  padding:5px; margin:10px;}
+
+    }
+
+/* large screen */
+@media only screen and (min-width: 771px ) 
+    {
+         .btn
   {color:white;
   background:#2a8fa3; 
   text-align:center; 
   border-radius:7px; 
   width: 200px; 
   padding:5px; margin:10px;}
+    }
   
   
   #greybtn
