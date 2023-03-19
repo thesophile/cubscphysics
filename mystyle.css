@@ -61,7 +61,7 @@ nav li a {
   	 	background:#2a8fa3; 
 	  	text-align:center; 
 	  	border-radius:7px; 
-	  	width: 200px; 
+	  	 
  	 	padding:10px; 
  	 	margin:5px;
  	 	font-size:30px;
@@ -78,10 +78,21 @@ nav li a {
 
 
 .box{
-   display:inline-block;
-   vertical-align: top;
-   width:20%;
-   height:300px;
+   
+   
    text-align:left;
    border-radius:5px;
    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}	
+   
+@media only screen and (min-width: 771px ){
+                                           .box{
+                                           display:inline-block;
+                                           vertical-align: top;
+                                           width:20%;
+                                           height:300px;
+                                          }
+                                          
+                                          .btn{
+                                          width: 200px;
+                                          }
+}   
