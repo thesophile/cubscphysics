@@ -1,0 +1,98 @@
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+    /* small screen, hidden by default */
+@media only screen and (max-width: 770px ) 
+    {
+    nav li {
+            display: block;
+            background-color:white;
+            }
+
+    }
+
+/* large screen, shown by default */
+@media only screen and (min-width: 771px ) 
+    {
+    nav li {
+            display: inline-block;
+            background-color:white;
+           }
+    }
+
+.active {
+    background-color: lightgrey;
+} 
+
+nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+	
+	header{
+	color:white;
+	background-color:#2576b0;
+	padding:20px;
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	th,
+	td {
+		padding: 5px;
+		text-align: left;
+	}
+
+
+/*For textbook buttons*/
+
+.btn{
+               color:white;
+  	 	background:#2a8fa3; 
+	  	text-align:center; 
+	  	border-radius:7px; 
+	  	 
+ 	 	padding:10px; 
+ 	 	margin:5px;
+ 	 	font-size:30px;
+ 	 	display:inline-block;
+             }
+             
+          .buttons{
+    			display:inline-block;
+ 		   }  
+.activebtn {
+     background:#144a54;
+}
+
+
+
+.box{
+   
+   
+   text-align:left;
+   border-radius:5px;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}	
+   
+@media only screen and (min-width: 771px ){
+                                           .box{
+                                           display:inline-block;
+                                           vertical-align: top;
+                                           width:20%;
+                                           height:300px;
+                                          }
+                                          
+                                          .btn{
+                                          width: 200px;
+                                          }
+}   

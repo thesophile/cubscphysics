@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head >
+
+
+<link rel="stylesheet" href="mystyle.css">
+
+	<header>
+	
+	<h1>Bsc Physics Calicut University </h1>
+	
+	<nav>
+            <ul>
+                <li ><a href="../index.html">Home</a></li>
+                <li class="active"><a href="../Textbooks.html">Books</a></li>                
+                <li><a href="../experiments.html">Experiments</a></li>
+                <li><a href="../classes.html">Classes</a></li>
+                <li><a href="../contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        </header>
+
+ 
+	
+
+</head>
+
+
+<body>
+
+
+
+<div class="buttons">
+	<button onclick="load(1)" class="btn activebtn" >Semester 1 </button> 
+
+	<button onclick="load(2)" class="btn">Semester 2 </button> 
+
+	<button onclick="load(3)" class="btn">Semester 3 </button> 
+
+	<button onclick="load(4)" class="btn">Semester 4 </button> 
+
+	<button onclick="load(5)" class="btn">Semester 5 </button> 
+
+	<button onclick="load(6)" class="btn">Semester 6 </button> 
+</div>
+
+
+<div id="books">
+
+<div class="box">
+	<h3>1. Physics</h3>
+
+	<a href="https://telegram.me/cubscphyscis/157">Daniel Kleppner</a>
+
+	<p>MANJUSHA Textbook : </p>
+
+	<a href="https://drive.google.com/file/d/1Gb_UoAOB1RfoyPu7hTZtJ1F-eRNVHouj/view?usp=share_link">Module 1 </a> 
+	<br>
+
+	<p><a href="https://drive.google.com/file/d/1FxGhxiI-TVseuASz8kmFOtP-kdi4xTq8/view?usp=share_link">Module 2 </a> </p>
+
+
+	<p> <a href="https://drive.google.com/file/d/1G2mu4BGLGAc_dQwazwbfektyoJV4tZDz/view?usp=share_link">Module 3 </a> </p>
+</div>
+
+<div class="box">
+	<h3>2. Maths </h3>
+	<a href="https://drive.google.com/file/d/1G2qAA2s5BUu-GUIrJM_q8iC312QEezTe/view?usp=share_link">Textbook</a>  
+</div>
+
+<div class="box">
+	<h3>3. English </h3>
+
+	<a href="https://drive.google.com/file/d/1G8ZUJZpIUfYh3ao-jsz9-04yGSBPpYwk/view?usp=share_link">Ways With Words Textbook </a> <br><br>
+
+	<a href="https://drive.google.com/file/d/1GCWGEUEqiYgNlBkCHrEDNt6zrCGBQYvq/view?usp=share_link">Transaction Textbook Guide</a> <br>
+</div>
+
+<div class="box">
+	<h3> 4. Chemistry : </h3>
+
+	<p> <a href="https://drive.google.com/file/d/1GGsVaWyIqMn40h8B5C8loeM4HP_EXt0K/view?usp=share_link">Syllabus </a> </p>
+
+	Textbook <br>
+	<p> 1. <a href="https://drive.google.com/file/d/1GJVFIj9Ip8GHtgob3N-Owf8_Ui1gL3BG/view?usp=share_link"> Analytical Chemistry </a> </p>
+
+	<p> 2. <a href="https://drive.google.com/file/d/1GS7FcjCi6d2eygvv6STAlqUTjj_Dz4vy/view?usp=share_link">Structure of Atoms </a> </p>
+
+	<p> 3. <a href="https://drive.google.com/file/d/1GOOsNDNrjrc50SpnUwN1had6cRWJDd7a/view?usp=share_link"> Nuclear Chemistry </a> </p>
+	 
+	<p> 4. <a href="https://drive.google.com/file/d/1GJf0J4OUvEHT_qSDAmU5B6slcWAEBgqI/view?usp=share_link">Bio Inorganic </a> </p>
+</div>
+
+</div>	   
+	<script>
+	   function load(id){
+				window.location.href = "sem"+id+".html#books";
+	}
+	</script>
+	   
+</body>
+</html>
+
+
