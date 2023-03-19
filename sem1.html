@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head >
-<!--mobile view -->	
+
 
 <link rel="stylesheet" href="mystyle.css">
 
@@ -32,6 +32,8 @@
 
 <body>
 
+
+
 <div class="buttons">
 	<button onclick="load(1)" class="btn activebtn" >Semester 1 </button> 
 
@@ -47,7 +49,7 @@
 </div>
 
 
-<div class="boxcontainer">
+<div id="books">
 
 <div class="box">
 	<h3>1. Physics</h3>
@@ -96,7 +98,7 @@
 </div>	   
 	<script>
 	   function load(id){
-				window.location.href = "sem"+id+".html";
+				window.location.href = "sem"+id+".html#books";
 	}
 	</script>
 	   
