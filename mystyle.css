@@ -5,6 +5,14 @@ nav ul {
   padding: 0;
 }
 
+#physics{ display:none;}
+
+.subs {
+   max-width:800px;
+   margin:0 auto;
+}
+
+
     /* small screen, hidden by default */
 @media only screen and (max-width: 770px ) 
     {
@@ -57,7 +65,7 @@ nav li a {
 /*For textbook buttons*/
 
 .btn{
-               color:white;
+                color:white;
   	 	background:#2a8fa3; 
 	  	text-align:center; 
 	  	border-radius:7px; 
@@ -84,6 +92,8 @@ nav li a {
    border-radius:5px;
    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}	
    
+
+/*
 @media only screen and (min-width: 771px ){
                                            .box{
                                            display:inline-block;
@@ -96,3 +106,5 @@ nav li a {
                                           width: 200px;
                                           }
 }   
+
+*/
