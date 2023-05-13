@@ -19,6 +19,44 @@ h3 {margin-top:0px;}
      background-color:#f2f2f2;
   } 
 
+/*Images*/
+
+
+.image-container{ /*The parent*/
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:100px; 
+  
+
+}
+
+.image-box { /*the children*/
+  position:relative;
+}
+
+.image-box:hover { /*the children*/
+  position:relative;
+  border:solid blue 4px;
+}
+
+.text-container {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  color: white; 
+  background-color:black;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  margin: 0 10px;
+  object-fit: cover; 
+}
+
 
     /* small screen, hidden by default */
 @media only screen and (max-width: 770px ) 
