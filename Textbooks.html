@@ -4,23 +4,11 @@
 <head >
 	
 <link rel="stylesheet" href="mystyle.css">
-	<header>
-	
-	<h1>Bsc Physics Calicut University </h1>
-	
-	<nav>
-            <ul >
-                <li ><a href="index.html">Home</a></li>
-                <li class="active"><a href="Textbooks.html">Books</a></li>                
-                <li><a href="experiments.html">Experiments</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-        
-        </header>
-  	
 
+
+  	
+<header id="app-header"></header>
+<script async src="header.js"></script>  
 
 		
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
@@ -40,22 +28,22 @@
 <div class="buttons">
 	<button onclick="physics()" class="btn">Physics </button> 
 
-	<button onclick="load(2)" class="btn">Maths</button> 
+	<button onclick="maths()" class="btn">Maths</button> 
 
-	<button onclick="load(3)" class="btn">Chemistry </button> 
+	<button onclick="chemistry()" class="btn">Chemistry </button> 
 
-	<button onclick="load(4)" class="btn">Malayalam </button> 
+	<button onclick="malayalam()" class="btn">Malayalam </button> 
 
-	<button onclick="load(5)" class="btn">English </button> 
+	<button onclick="english()" class="btn">English </button> 
 
 	
 </div>
 
 
 <!--Physics-->
+<!--###################################################################################-->
 
-
-<div id="physics" class="subs">
+<div id="physics" class="subs">  <!--id for hiding and showing & class is for styling-->
 
 
 <hr />
@@ -251,6 +239,33 @@
 
 </div>
 <!--/physics-->
+<!--###################################################################################-->
+
+<div id = "maths" class = "subs">
+maths not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+<div id = "chemistry" class = "subs">
+chemistry not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+<div id = "malayalam" class = "subs">
+malayalam not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+<div id = "english" class = "subs">
+english not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+
+
+
+
+
 
 <hr>
         
@@ -291,76 +306,7 @@
 
 
   
-  
-<style>
- .box{
-   text-align:center;
-   border-radius:5px;
-   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-   }
-  
 
-  
-  
-  /*small screen*/
-@media only screen and (max-width: 770px ) 
-    {
-        	.btn{
-        		color:white;
-  			background:#2a8fa3; 
-  			text-align:center; 
-  			border-radius:7px; 
-  			width: 90%; 
-  			padding:10px; margin:10px;
-  	            }
-  
-  
-  /* For iframe*/
-  
- 	       .embed{
-          		height:480px;
-          		width:100%;
-       	     }
-
-    }
-
-/* large screen */
-@media only screen and (min-width: 771px ) 
-    {
-         .btn{
-               color:white;
-  	 	background:#2a8fa3; 
-	  	text-align:center; 
-	  	border-radius:7px; 
-	  	width: 200px; 
- 	 	padding:10px; 
- 	 	margin:5px;
- 	 	font-size:30px;
- 	 	display:inline-block;
-             }
-             
-          .buttons{
-    			display:inline-block;
- 		   }   
-  
-  /* For iframe*/
-  
-  	.embed{
-          	height:480px;
-          	width:640px;
-              }  
-  
-  
-    }
-  
-  
-  #greybtn
-  {background:lightgrey;  text-align:center;  border-radius:7px;  width: 200px; padding:5px;}
-  
-
-  
-  
-</style>
 
 
 <script>
@@ -369,7 +315,42 @@
 
 function physics(){
        document.getElementById("physics").style.display="block";
-       
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="none";
+}
+
+function chemistry(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="block";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="none";
+}
+
+function maths(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="block";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="none";
+}
+
+function malayalam(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="block";       
+       document.getElementById("english").style.display="none";
+}
+
+function english(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="block";
 }
 
 

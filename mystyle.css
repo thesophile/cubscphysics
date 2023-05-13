@@ -5,11 +5,12 @@ nav ul {
   padding: 0;
 }
 
-#physics{ display:none;}
+#physics{ }
 
 .subs {
    max-width:800px;
    margin:0 auto;
+   display:none;
 }
 
 h1 {margin:0px;}
@@ -129,27 +130,74 @@ nav li a {
 }
 
 
+/*For textbooks.html*/ 
+/*####################################################################################*/
 
-.box{
-   
-   
-   text-align:left;
+ .box{
+   text-align:center;
    border-radius:5px;
-   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}	
-   
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   }
+  
 
-/*
-@media only screen and (min-width: 771px ){
-                                           .box{
-                                           display:inline-block;
-                                           vertical-align: top;
-                                           width:20%;
-                                           height:300px;
-                                          }
-                                          
-                                          .btn{
-                                          width: 200px;
-                                          }
-}   
+  
+  
+  /*small screen*/
+@media only screen and (max-width: 770px ) 
+    {
+        	.btn{
+        		color:white;
+  			background:#2a8fa3; 
+  			text-align:center; 
+  			border-radius:7px; 
+  			width: 90%; 
+  			padding:10px; margin:10px;
+  	            }
+  
+  
+  /* For iframe*/
+  
+ 	       .embed{
+          		height:480px;
+          		width:100%;
+       	     }
 
-*/
+    }
+
+/* large screen */
+@media only screen and (min-width: 771px ) 
+    {
+         .btn{
+               color:white;
+  	 	background:#2a8fa3; 
+	  	text-align:center; 
+	  	border-radius:7px; 
+	  	width: 200px; 
+ 	 	padding:10px; 
+ 	 	margin:5px;
+ 	 	font-size:30px;
+ 	 	display:inline-block;
+             }
+             
+          .buttons{
+    			display:inline-block;
+ 		   }   
+  
+  /* For iframe*/
+  
+  	.embed{
+          	height:480px;
+          	width:640px;
+              }  
+  
+  
+    }
+  
+  
+  #greybtn
+  {background:lightgrey;  text-align:center;  border-radius:7px;  width: 200px; padding:5px;}
+  
+
+  
+  
+
