@@ -12,6 +12,13 @@ nav ul {
    margin:0 auto;
 }
 
+h1 {margin:0px;}
+h3 {margin-top:0px;}
+
+.grey{
+     background-color:#f2f2f2;
+  } 
+
 
     /* small screen, hidden by default */
 @media only screen and (max-width: 770px ) 
