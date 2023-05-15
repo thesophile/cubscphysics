@@ -5,13 +5,58 @@ nav ul {
   padding: 0;
 }
 
-#physics{ }
+    /* small screen, hidden by default */
+@media only screen and (max-width: 770px ) 
+    {
+    nav li {
+            display: block;
+            background-color:white;
+            }
 
-.subs {
-   max-width:800px;
-   margin:0 auto;
-   display:none;
-}
+    }
+
+/* large screen, shown by default */
+@media only screen and (min-width: 771px ) 
+    {
+    nav li {
+            display: inline-block;
+            background-color:white;
+           }
+    }
+
+.active {
+    background-color: lightgrey;
+} 
+
+	nav li div{
+	  display: block;
+	  padding: 10px;
+	  text-decoration: none;
+	  color:blue;
+	}
+	
+	header{
+	color:white;
+	background-color:#2576b0;
+	padding:20px;
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	th,
+	td {
+		padding: 5px;
+		text-align: left;
+	}
+
+
+
+
 
 h1 {margin:0px;}
 h3 {margin-top:0px;}
@@ -21,7 +66,7 @@ h3 {margin-top:0px;}
   } 
 
 /*Images*/
-
+/*##############################################################3*/
 
 .image-container{ /*The parent*/
 display: flex;
@@ -59,56 +104,9 @@ display: flex;
 }
 
 
-    /* small screen, hidden by default */
-@media only screen and (max-width: 770px ) 
-    {
-    nav li {
-            display: block;
-            background-color:white;
-            }
 
-    }
-
-/* large screen, shown by default */
-@media only screen and (min-width: 771px ) 
-    {
-    nav li {
-            display: inline-block;
-            background-color:white;
-           }
-    }
-
-.active {
-    background-color: lightgrey;
-} 
-
-nav li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-}
-	
-	header{
-	color:white;
-	background-color:#2576b0;
-	padding:20px;
-	}
-	
-	table,
-	th,
-	td {
-		border: 1px solid black;
-		border-collapse: collapse;
-	}
-	
-	th,
-	td {
-		padding: 5px;
-		text-align: left;
-	}
-
-
-/*For textbook buttons*/
+/*For textbooks.html*/ 
+/*####################################################################################*/
 
 .btn{
                 color:white;
@@ -130,8 +128,7 @@ nav li a {
 }
 
 
-/*For textbooks.html*/ 
-/*####################################################################################*/
+
 
  .box{
    text-align:center;
@@ -198,6 +195,10 @@ nav li a {
   {background:lightgrey;  text-align:center;  border-radius:7px;  width: 200px; padding:5px;}
   
 
-  
+  .subs {
+   max-width:800px;
+   margin:0 auto;
+   display:none;
+}
   
 
