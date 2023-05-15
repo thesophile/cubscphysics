@@ -221,4 +221,19 @@ h3 {margin-top:0px;}
    display:none;
 }
   
+/*Iframe*/
 
+  /*small screen*/
+@media only screen and (max-width: 770px ) {/* small screen */
+			iframe{
+			height:90%; 
+			width:100%;
+            		}
+}
+
+@media only screen and (min-width: 771px ) {/* large screen */
+			iframe{
+			height:500px; 
+			width:700px;
+            		}
+}
