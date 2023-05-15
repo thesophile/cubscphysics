@@ -68,17 +68,35 @@ h3 {margin-top:0px;}
 /*Images*/
 /*##############################################################3*/
 
+@media only screen and (max-width: 770px ){ /*for mobile*/
+       
 .image-container{ /*The parent*/
-display: flex;
+  display: flex;
+  flex-direction: column; /* Set the flex direction to column */
   justify-content: center;
   align-items: center;
   margin-top:100px; 
-  
+  width:100%;
+
+}
+   
+}
+
+@media only screen and (min-width: 771px ) { /*for Desktop*/
+.image-container{ /*The parent*/
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  margin-top:100px; 
+		  width:100%;
+		  
+		}
 
 }
 
 .image-box { /*the children*/
   position:relative;
+  
 }
 
 .image-box:hover { /*the children*/
@@ -99,8 +117,10 @@ display: flex;
 .image-container img {
   width: 300px;
   height: 300px;
-  margin: 0 10px;
+  margin: 10px;
   object-fit: cover; 
+  
+  
 }
 
 
