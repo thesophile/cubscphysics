@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head >
+
+	   
+   
+<link rel="stylesheet" href="mystyle.css">
+
+<header id="app-header"></header>
+<script async src="header.js"></script>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+	
+	
+
+
+</head>
+
+
+<body>
+<p>mass per unit length of the wire(m): 
+	<input type="number" id="mass" size="4"> 
+	Kg/m
+	</p>
+	<table style="width:100%">
+		<tr>
+			<th rowspan="2">Sl.No</th>
+			<th rowspan="2">Load(M)</th>
+			<th colspan="3">Resonant Length of wire(l)</th>
+			<th rowspan="2">Frequency <br> $${\frac{1}{2 l} \sqrt{\frac{M g}{m}} }$$</th>
+		</tr>
+		<tr>
+			
+			<th>Length<br> increasing</th>
+			<th>Length <br>decreasing</th>
+			<th>Mean</th>
+			
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><input type="number" id="load" size="4"> 
+			  <select id="w_unit">
+			   <option value="g">g</option>
+			   <option value="Kg">Kg</option>  
+			 </select>
+			</td>
+			<td> <input type="number" id="length1" size="4"> cm
+			 
+			</td>
+			<td> <input type="number" id="length2" size="4"> cm</td>
+			<td> 
+			<input type="number" id="mean" size="4"   
+			onclick="average()" > 
+			
+			<select id="unit">
+			   <option value="cm">cm</option>
+			   <option value="m">m</option>  
+			 </select>
+			
+			</td>
+			<td> 
+			<button onclick="calculate()">Calculate</button>
+			<p id="result">result</p>
+			</td>
+			
+		</tr>
+	</table>
+	
+	
+	
+   
+
+
+    
+    
+
+
+
+<script>
+	function calculate() {
+	mean = document.getElementById("mean").value;
+	meanBox = document.getElementById("mean");
+	load = document.getElementById("load").value;
+	length1 = document.getElementById("length1").value;
+	length1 = parseFloat(length1);
+	length2 = document.getElementById("length2").value;
+	length2 = parseFloat(length2);
+	mass = document.getElementById("mass").value;
+	var length = (length1+length2)/2;
+	var unit = document.getElementById("unit");
+	var w_unit = document.getElementById("w_unit");
+	
+	
+	if (mean.length==0)
+	{
+	meanBox.value=length;
+	mean=length;
+	}
+	
+	//unit conversion
+	if (unit.value=="cm"){
+	mean = mean/100;
+	}
+	
+	if (w_unit.value=="g"){
+	load = load/1000;
+	}
+	
+	console.log(load);
+	
+	//console.log(mean);
+	
+	result = Math.sqrt(load*9.8/mass)/(2*mean);
+	
+	result= result.toFixed(4);
+	
+	
+	document.getElementById("result").innerHTML = result ;
+	}
+	
+	function average() {
+	
+	var mean = document.getElementById("mean");
+	var length1 = document.getElementById("length1").value;
+	var length1 = parseFloat(length1);
+	var length2 = document.getElementById("length2").value;
+	var length2 = parseFloat(length2);
+	var length = (length1+length2)/2;
+	
+	
+	
+	mean.value= length;
+	
+	
+	}
+	
+	
+	</script>
+	
+</body>
+</html>	
