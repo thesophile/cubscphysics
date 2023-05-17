@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head >
+	
+<link rel="stylesheet" href="mystyle.css">
+
+
+  	
+<header id="app-header"></header>
+<script async src="header.js"></script>  
+<!--Task for me: make this execute before the iframe-->
+		
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="buttons">
+	<button onclick="physics()" class="btn">Physics </button> 
+
+	<button onclick="maths()" class="btn">Maths</button> 
+
+	<button onclick="chemistry()" class="btn">Chemistry </button> 
+
+	<button onclick="malayalam()" class="btn">Malayalam </button> 
+
+	<button onclick="english()" class="btn">English </button> 
+
+	
+</div>
+
+
+<!--Physics-->
+<!--###############################-->
+<div id="physicshtml"></div>
+<script async src="subs/physics.js"></script> 
+
+
+
+<div id = "maths" class = "subs">
+maths not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+<div id = "chemistry" class = "subs">
+chemistry not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+<div id = "malayalam" class = "subs">
+malayalam not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+<div id = "english" class = "subs">
+english not uploaded yet. Please come back later. Or 
+<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+</div>
+
+
+
+
+
+
+
+<hr>
+        
+        <p>
+	<a href="https://telegram.me/cubscphyscis/158">
+	Download all textbooks in Telegram</a>
+	(Recommended)
+	</p>
+
+	<hr>
+
+
+<p> Bsc Physics syllabus (New- 2020 onwards)</p>
+  
+  
+<div id="iframehere"></div>  <!--Iframe will go here-->
+<!--<iframe  src="media/Bsc-Physics-Syllabus.pdf"   ></iframe>  -->
+
+  <script async>
+   // window.addEventListener('DOMContentLoaded', function() {
+      // Your header script code goes here
+      
+      // Create and append the iframe dynamically
+      var iframe = document.createElement('iframe');
+      iframe.src = 'media/Bsc-Physics-Syllabus.pdf';
+      document.getElementById("iframehere").appendChild(iframe);
+   // });
+  </script>
+
+  
+<br />
+<a href="media/Bsc-Physics-Syllabus.pdf" target="blank" >Download</a>
+<br><br>
+
+
+
+
+
+
+<br><br>
+
+
+
+
+
+<hr>
+<p>Abhinav P B</p>
+
+<p>For feedback and suggestions, <a href="https://telegram.me/abhinavpb249"> Telegram me</a></p>
+
+
+  
+
+
+
+<script>
+
+
+
+function physics(){
+       document.getElementById("physics").style.display="block";
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="none";
+}
+
+function chemistry(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="block";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="none";
+}
+
+function maths(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="block";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="none";
+}
+
+function malayalam(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="block";       
+       document.getElementById("english").style.display="none";
+}
+
+function english(){
+       document.getElementById("physics").style.display="none";
+       document.getElementById("chemistry").style.display="none";       
+       document.getElementById("maths").style.display="none";
+       document.getElementById("malayalam").style.display="none";       
+       document.getElementById("english").style.display="block";
+}
+
+
+</script>
+
+
+</body>
+</html>
+
+

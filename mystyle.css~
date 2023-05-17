@@ -1,0 +1,239 @@
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+    /* small screen, hidden by default */
+@media only screen and (max-width: 770px ) 
+    {
+    nav li {
+            display: block;
+            background-color:white;
+            }
+
+    }
+
+/* large screen, shown by default */
+@media only screen and (min-width: 771px ) 
+    {
+    nav li {
+            display: inline-block;
+            background-color:white;
+           }
+    }
+
+.active {
+    background-color: lightgrey;
+} 
+
+	nav li div{
+	  display: block;
+	  padding: 10px;
+	  text-decoration: none;
+	  color:blue;
+	}
+	
+	header{
+	color:white;
+	background-color:#2576b0;
+	padding:20px;
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	th,
+	td {
+		padding: 5px;
+		text-align: left;
+	}
+
+
+
+
+
+h1 {margin:0px;}
+h3 {margin-top:0px;}
+
+.grey{
+     background-color:#f2f2f2;
+  } 
+
+/*Images*/
+/*##############################################################3*/
+
+@media only screen and (max-width: 770px ){ /*for mobile*/
+       
+.image-container{ /*The parent*/
+  display: flex;
+  flex-direction: column; /* Set the flex direction to column */
+  justify-content: center;
+  align-items: center;
+  margin-top:100px; 
+  width:100%;
+
+}
+   
+}
+
+@media only screen and (min-width: 771px ) { /*for Desktop*/
+.image-container{ /*The parent*/
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  margin-top:100px; 
+		  width:100%;
+		  
+		}
+
+}
+
+.image-box { /*the children*/
+  position:relative;
+  
+}
+
+.image-box:hover { /*the children*/
+  position:relative;
+  border:solid blue 4px;
+}
+
+.text-container {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  color: white; 
+  background-color:black;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  object-fit: cover; 
+  
+  
+}
+
+
+
+/*For textbooks.html*/ 
+/*####################################################################################*/
+
+.btn{
+                color:white;
+  	 	background:#2a8fa3; 
+	  	text-align:center; 
+	  	border-radius:7px; 
+	  	 
+ 	 	padding:10px; 
+ 	 	margin:5px;
+ 	 	font-size:30px;
+ 	 	display:inline-block;
+             }
+             
+          .buttons{
+    			display:inline-block;
+ 		   }  
+.activebtn {
+     background:#144a54;
+}
+
+
+
+
+ .box{
+   text-align:center;
+   border-radius:5px;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   }
+  
+
+  
+  
+  /*small screen*/
+@media only screen and (max-width: 770px ) 
+    {
+        	.btn{
+        		color:white;
+  			background:#2a8fa3; 
+  			text-align:center; 
+  			border-radius:7px; 
+  			width: 90%; 
+  			padding:10px; margin:10px;
+  	            }
+  
+  
+  /* For iframe*/
+  
+ 	       .embed{
+          		height:480px;
+          		width:100%;
+       	     }
+
+    }
+
+/* large screen */
+@media only screen and (min-width: 771px ) 
+    {
+         .btn{
+               color:white;
+  	 	background:#2a8fa3; 
+	  	text-align:center; 
+	  	border-radius:7px; 
+	  	width: 200px; 
+ 	 	padding:10px; 
+ 	 	margin:5px;
+ 	 	font-size:30px;
+ 	 	display:inline-block;
+             }
+             
+          .buttons{
+    			display:inline-block;
+ 		   }   
+  
+  /* For iframe*/
+  
+  	.embed{
+          	height:480px;
+          	width:640px;
+              }  
+  
+  
+    }
+  
+  
+  #greybtn
+  {background:lightgrey;  text-align:center;  border-radius:7px;  width: 200px; padding:5px;}
+  
+
+  .subs {
+   max-width:800px;
+   margin:0 auto;
+   display:none;
+}
+  
+/*Iframe*/
+
+  /*small screen*/
+@media only screen and (max-width: 770px ) {/* small screen */
+			iframe{
+			height:90%; 
+			width:100%;
+            		}
+}
+
+@media only screen and (min-width: 771px ) {/* large screen */
+			iframe{
+			height:500px; 
+			width:700px;
+            		}
+}
