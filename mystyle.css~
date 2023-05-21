@@ -66,7 +66,7 @@ nav ul {
 	
 	header{
 	color:white;
-	/*background-color:#2576b0;*/
+	background-color:#2576b0;
 	padding:10px;
 	}
 	

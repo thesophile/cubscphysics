@@ -1,7 +1,8 @@
 
 
 let appHeader = `    
-
+    <h1>Bsc Physics Calicut University </h1>
+	<h3>Study materials </h3>
 	<title>CU Bsc Physics</title>
 	<nav>
 	    <img src="media/logo.png" width="400px"/>
