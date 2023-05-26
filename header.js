@@ -4,7 +4,8 @@ let appHeader = `
 
 	<title>CU Bsc Physics</title>
 	<nav>
-	    <img src="media/logo.png" width="400px"/>
+	    <img id="logo" src="media/logo.png" />
+	    <button id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
             <ul class="menu">
                 <li> <div  id ="index" onclick='goto(this.id)'>     Home</div></li>
                 <li> <div id="Textbooks" onclick='goto(this.id)'>   Books</div></li>                
@@ -35,4 +36,6 @@ Button.style.backgroundColor="lightgrey";
         file_name =buttonID+".html"	
 	window.open(file_name,"_self")
 }
+
+
 
