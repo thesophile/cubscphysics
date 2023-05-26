@@ -37,5 +37,14 @@ Button.style.backgroundColor="lightgrey";
 	window.open(file_name,"_self")
 }
 
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const menu = document.getElementsByClassName('menu')[0];
 
+  hamburgerIcon.addEventListener('click', function() {
+    if  (menu.style.display==="none")
+        {menu.style.display="block";}
+    else{
+       menu.style.display="none";
+    }    
+  });
 

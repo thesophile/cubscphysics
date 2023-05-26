@@ -5,7 +5,7 @@ header{  position: fixed;
   width: 100%;
   background-color: #ffffff;
   padding: 20px;
-  
+  z-index: 1;
      
 }
 
@@ -15,30 +15,6 @@ body {
   
 }
 
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-  margin-right: 25px;
-}
-
-.menu li {
-  display: inline-block;
-  margin-left: 10px;
-
-}
-
-.menu li:first-child {
-  margin-left: 0;
-}
-
-.menu li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-}
 
 nav ul {
   list-style: none;
@@ -74,6 +50,8 @@ nav ul {
 
     .menu{
     display:none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
     
     }
 
@@ -88,6 +66,34 @@ nav ul {
 
 /* large screen*/
 @media only screen and (min-width: 771px ) {
+
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 25px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+
 
     #hamburger-icon {
     display: none;
