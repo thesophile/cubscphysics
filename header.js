@@ -40,11 +40,13 @@ Button.style.backgroundColor="lightgrey";
   const hamburgerIcon = document.getElementById('hamburger-icon');
   const menu = document.getElementsByClassName('menu')[0];
 
-  hamburgerIcon.addEventListener('click', function() {
-    if  (menu.style.display==="none")
-        {menu.style.display="block";}
-    else{
-       menu.style.display="none";
-    }    
-  });
+ 
+hamburgerIcon.addEventListener('click', function() {
+  const computedStyle = getComputedStyle(menu);
+  if (computedStyle.display === "none") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+});
 

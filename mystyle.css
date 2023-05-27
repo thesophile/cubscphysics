@@ -6,6 +6,7 @@ header{  position: fixed;
   background-color: #ffffff;
   padding: 20px;
   z-index: 1;
+  
      
 }
 
@@ -22,7 +23,7 @@ nav ul {
   padding: 0;
 }
 
-    /* small screen */
+/* small screen */
 @media only screen and (max-width: 770px ) {
 
     #hamburger-icon {
@@ -47,22 +48,20 @@ nav ul {
     #logo{
        width:80%;
     }
+    
 
-    .menu{
+    header .menu{
     display:none;
-    background-color: rgba(255, 255, 255, 0.5);
+    position:fixed;
+    top:65px;
+    right:0;
+    z-index:2;
     cursor: pointer;
-    
+    background-color: rgba(255, 255, 255, 0.9);
     }
-
-    
-
-    nav li {
-            display: block;
-            background-color:white;
-            }
-
-    }
+  
+     
+} /*end of small screen*/
 
 /* large screen*/
 @media only screen and (min-width: 771px ) {
