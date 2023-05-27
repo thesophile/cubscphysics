@@ -59,6 +59,11 @@ nav ul {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.9);
     }
+ 
+   .myimages {
+   width:100%;
+   } 
+ 
   
      
 } /*end of small screen*/
