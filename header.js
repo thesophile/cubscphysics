@@ -8,10 +8,10 @@ let appHeader = `
 	    <button id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
             <ul class="menu">
                 <li> <div  id ="index" onclick='goto(this.id)'>     Home</div></li>
-                <li> <div id="Textbooks" onclick='goto(this.id)'>   Books</div></li>                
+                <li> <div id="Textbooks" onclick='goto(this.id)'>   Books</div></li>
+                <li> <div id="classes" onclick='goto(this.id)'>     Classes</div></li>                
                 <li> <div id="experiments" onclick='goto(this.id)'> Experiments</div></li>
-                <li> <div id="classes" onclick='goto(this.id)'>     Classes</div></li>
-                <li> <div id="about" onclick='goto(this.id)'>       About </div></li>
+                
             </ul>
         </nav>
 `;
@@ -28,8 +28,9 @@ console.log( name );
 //get the button with that name
 var Button = document.getElementById(name);
 //change that color of the button
-Button.style.backgroundColor="lightgrey";
+Button.style.border="3px solid black";
 }
+
 
 
  function goto(buttonID){

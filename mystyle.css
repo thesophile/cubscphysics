@@ -72,50 +72,45 @@ nav ul {
 @media only screen and (min-width: 771px ) {
 
 
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-  margin-right: 25px;
-}
+	.menu {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  float: right;
+	  margin-right: 25px;
+	}
 
-.menu li {
-  display: inline-block;
-  margin-left: 10px;
+	.menu li {
+	  display: inline-block;
+	  margin-left: 10px;
+	  
 
-}
+	}
 
-.menu li:first-child {
-  margin-left: 0;
-}
-
-.menu li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-}
+	.menu li:first-child {
+	  margin-left: 0;
+	}
 
 
+        #hamburger-icon {
+        display: none;
+        }
 
-    #hamburger-icon {
-    display: none;
-    }
+        #logo{
+        width:400px;
+        }
 
-     #logo{
-       width:400px;
-    }
-
-    nav li {
+        nav li {
             display: inline-block;
             background-color:white;
-           }
-    }
+         }
+         
+        
+           
+           
 
-.active {
-    background-color: lightgrey;
-} 
+}/*Large screen^^^^^^*/
+
 
 	nav li div{
 	  display: block;
@@ -168,8 +163,26 @@ h3 {margin-top:0px;}
   width:100%;
 
 }
-   
+  
+.video-container{ /*The parent*/
+   position:relative;
+  width:95%;
+    margin:auto;
+    
+}  
+ 
+ .video-box { /*the children*/
+  width:100%;
 }
+
+.video-container .video {
+  
+  width:100%;
+  height:auto;
+  
+  }
+   
+}/*for mobile end*/
 
 @media only screen and (min-width: 771px ) { /*for Desktop*/
 .image-container{ /*The parent*/
@@ -181,14 +194,40 @@ h3 {margin-top:0px;}
 		  
 		}
 
-}
+.video-container{ /*The parent*/
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  margin:10px; 
+		  width:100%;
+		  
+		}		
+.video-container .video {
+  width: 480px;
+  height: 270px;
+  margin: 10px;
+  object-fit: contain; 
+  }		
+		
+		
+
+} /*for Desktop End^^^ */
 
 .image-box { /*the children*/
   position:relative;
   
 }
+.video-box { /*the children*/
+  position:relative;
+  
+}
 
 .image-box:hover { /*the children*/
+  position:relative;
+  border:solid blue 4px;
+}
+
+.video-box:hover { /*the children*/
   position:relative;
   border:solid blue 4px;
 }
@@ -208,9 +247,10 @@ h3 {margin-top:0px;}
   height: 300px;
   margin: 10px;
   object-fit: cover; 
+  }
   
+
   
-}
 
 .mytext { text-align:center; } /*Text on the image*/  
 
@@ -251,9 +291,15 @@ margin-top:20px;
    text-align:center;
    border-radius:5px;
    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   padding:20px;
+   padding-top:0px;
    }
   
-
+.subs p{
+         background-color:white;
+         padding:5px;
+   
+}
   
   
   /*small screen*/
@@ -316,6 +362,8 @@ margin-top:20px;
    max-width:800px;
    margin:0 auto;
    display:none;
+   
+   
 }
   
 /*Iframe*/

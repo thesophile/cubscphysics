@@ -8,10 +8,9 @@
 
   	
 <header id="app-header"></header>
-<script async src="header.js"></script>  
+<script src="header.js"></script>  
 <!--Issue: make this execute before the iframe-->
 		
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 
 </head>
 
@@ -35,7 +34,7 @@
 
 
 <div id="physicshtml"></div>
-<script async src="subs/physics.js"></script> 
+<script src="subs/physics.js"></script> 
 
 
 
@@ -74,22 +73,13 @@ english not uploaded yet. Please come back later. Or
 <p> Bsc Physics syllabus (New- 2020 onwards)</p>
   
 
-<!--<iframe  src="media/Bsc-Physics-Syllabus.pdf"   ></iframe>  -->
+<!--<iframe  src="media/Bsc-Physics-Syllabus.pdf"   ></iframe> -->
 
-  
-<div id="iframehere"></div>  <!--Iframe will go here-->
-<!--<iframe  src="media/Bsc-Physics-Syllabus.pdf"   ></iframe>  -->
-
-  <script async>
-   // window.addEventListener('DOMContentLoaded', function() {
-      // Your header script code goes here
-      
-      // Create and append the iframe dynamically
-      var iframe = document.createElement('iframe');
-      iframe.src = 'media/Bsc-Physics-Syllabus.pdf';
-      document.getElementById("iframehere").appendChild(iframe);
-   // });
-  </script>
+     <iframe id="myIframe"></iframe>
+     <script>
+      var site = "media/Bsc-Physics-Syllabus.pdf";
+      document.getElementById('myIframe').src = site;
+     </script>
 
   
 <br>
