@@ -41,9 +41,12 @@ Button.style.border="3px solid black";
 
 //toggle display of menu
 
-$("#hamburger-icon").click(function(){
+$("#hamburger-icon").click(
+  function(){
   $(".menu").toggle();
 });
+
+
 
 // const hamburgerIcon = document.getElementById('hamburger-icon');
 // const menu = document.getElementsByClassName('menu')[0];
