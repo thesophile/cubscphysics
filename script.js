@@ -25,24 +25,5 @@ Button.style.border="3px solid black";
 // });
 
 
-// $("#hamburger-icon").ontouchstart = menu_toggle;
-
-// function menu_toggle(){
-//   $(".menu").toggle();
-// }
-
-// const menu = document.querySelector(".menu");
-
-// document.getElementById("hamburger-icon").onclick = myFunction;
-
-
-// document.getElementById("hamburger-icon").ontouchstart = myFunction;
-
-
-// function myFunction() {
-  
-//   $(".menu").toggle();
-
-// }
 
 
