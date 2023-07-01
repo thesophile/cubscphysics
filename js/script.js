@@ -18,11 +18,9 @@ function goto(buttonID){
 	window.open(file_name,"_self")
 }
 
-// const hamburger = document.getElementById("hamburger-icon");
 
-// toggle display of menu
-	// hamburger.onclick = myFunction;
-	
+
+// toggle display of menu	
 	function toggle(){
 	  		$(".menu").toggle();
 	}

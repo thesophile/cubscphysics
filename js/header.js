@@ -9,13 +9,13 @@ let appHeader = `
 	  
     <nav>  
 	    <button onclick="toggle()" id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
-            <ul class="menu">
-                <li> <div  id ="index" onclick='goto(this.id)'>     Home</div></li>
-                <li> <div id="Textbooks" onclick='goto(this.id)'>   Books</div></li>
-                <li> <div id="classes" onclick='goto(this.id)'>     Classes</div></li>                
-                <li> <div id="experiments" onclick='goto(this.id)'> Experiments</div></li>
+            <div class="menu">
+                 <div  id ="index" onclick='goto(this.id)'>     Home</div>
+                 <div id="Textbooks" onclick='goto(this.id)'>   Books</div>
+                 <div id="classes" onclick='goto(this.id)'>     Classes</div>                
+                 <div id="experiments" onclick='goto(this.id)'> Experiments</div>
                 
-            </ul>
+            </div>
     </nav>
   </header>      
 `;
