@@ -23,7 +23,7 @@ function goto(buttonID){
 // toggle display of menu
 	// hamburger.onclick = myFunction;
 	
-	function toggle() {
+	function toggle(){
 	  		$(".menu").toggle();
 	}
 
