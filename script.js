@@ -19,9 +19,11 @@ function goto(buttonID){
 }
 
 const menu = document.getElementsByClassName("menu")[0];
+const hamburger = document.getElementById("hamburger-icon");
 
 // toggle display of menu
-document.getElementById("hamburger-icon").onclick = myFunction;
+	hamburger.onclick = myFunction;
+	
 	function myFunction() {
 	  		menu.toggle();
 	}
