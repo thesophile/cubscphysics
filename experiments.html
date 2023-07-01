@@ -6,6 +6,7 @@
 	   
    
 <link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="experiments.css">
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
@@ -24,49 +25,53 @@
 	<input type="number" id="mass" size="4"> 
 	Kg/m
 	</p>
-	<table style="width:100%">
-		<tr>
-			<th rowspan="2">Sl.No</th>
-			<th rowspan="2">Load(M)</th>
-			<th colspan="3">Resonant Length of wire(l)</th>
-			<th rowspan="2">Frequency <br> $${\frac{1}{2 l} \sqrt{\frac{M g}{m}} }$$</th>
-		</tr>
-		<tr>
-			
-			<th>Length<br> increasing</th>
-			<th>Length <br>decreasing</th>
-			<th>Mean</th>
-			
-		</tr>
-		<tr>
-			<td>1</td>
-			<td><input type="number" id="load" size="4"> 
-			  <select id="w_unit">
-			   <option value="g">g</option>
-			   <option value="Kg">Kg</option>  
-			 </select>
-			</td>
-			<td> <input type="number" id="length1" size="4"> cm
-			 
-			</td>
-			<td> <input type="number" id="length2" size="4"> cm</td>
-			<td> 
-			<input type="number" id="mean" size="4"   
-			onclick="average()" > 
-			
-			<select id="unit">
-			   <option value="cm">cm</option>
-			   <option value="m">m</option>  
-			 </select>
-			
-			</td>
-			<td> 
-			<button onclick="calculate()">Calculate</button>
-			<p id="result">result</p>
-			</td>
-			
-		</tr>
-	</table>
+
+
+	<div class="table-container">
+		<table>
+			<tr>
+				<th rowspan="2">Sl.No</th>
+				<th rowspan="2">Load(M)</th>
+				<th colspan="3">Resonant Length of wire(l)</th>
+				<th rowspan="2">Frequency <br> $${\frac{1}{2 l} \sqrt{\frac{M g}{m}} }$$</th>
+			</tr>
+			<tr>
+		
+				<th>Length<br> increasing</th>
+				<th>Length <br>decreasing</th>
+				<th>Mean</th>
+		
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><input type="number" id="load" size="4">
+				  <select id="w_unit">
+				   <option value="g">g</option>
+				   <option value="Kg">Kg</option>
+				 </select>
+				</td>
+				<td> <input type="number" id="length1" size="4"> cm
+		
+				</td>
+				<td> <input type="number" id="length2" size="4"> cm</td>
+				<td>
+				<input type="number" id="mean" size="4"
+				onclick="average()" >
+		
+				<select id="unit">
+				   <option value="cm">cm</option>
+				   <option value="m">m</option>
+				 </select>
+		
+				</td>
+				<td>
+				<button onclick="calculate()">Calculate</button>
+				<p id="result">result</p>
+				</td>
+		
+			</tr>
+		</table>
+	</div>
 	
 	
 	
