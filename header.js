@@ -1,5 +1,7 @@
-var rendered = false;
 
+setheader();
+
+function setheader(){
 let appHeader = `    
 
 	<header>
@@ -20,14 +22,8 @@ let appHeader = `
 
 
 
-
-
-  if (!rendered) {
-    rendered = true;
     document.getElementById("app-header").innerHTML = appHeader;
 
-  }
-
-
+}
 
 
