@@ -17,10 +17,10 @@ function goto(buttonID){
 }
 
 
-// toggle display of menu
-document.getElementById("hamburger-icon").onclick = myFunction;
-	function myFunction() {
-	  		$(".menu").toggle();	
-	}
+// // toggle display of menu
+// document.getElementById("hamburger-icon").onclick = myFunction;
+// 	function myFunction() {
+// 	  		$(".menu").toggle();	
+// 	}
 
 
