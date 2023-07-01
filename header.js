@@ -8,7 +8,7 @@ let appHeader = `
     <img id="logo" src="media/logo.png" />
 	  
     <nav>  
-	    <button id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+	    <button onclick="toggle()" id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
             <ul class="menu">
                 <li> <div  id ="index" onclick='goto(this.id)'>     Home</div></li>
                 <li> <div id="Textbooks" onclick='goto(this.id)'>   Books</div></li>
