@@ -8,15 +8,41 @@
 	
 <link rel="stylesheet" href="mystyle.css">
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
 <script src="script.js" defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 </head>
 
 <body>
 
-<header id="app-header"></header>
-<script src="header.js" defer></script>
+	<header>
+		<img id="logo" src="media/logo.png" />
+		  
+		<nav>  
+			<button id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+				<ul class="menu">
+					<li> <div  id ="index" onclick='goto(this.id)'>     Home</div></li>
+					<li> <div id="Textbooks" onclick='goto(this.id)'>   Books</div></li>
+					<li> <div id="classes" onclick='goto(this.id)'>     Classes</div></li>                
+					<li> <div id="experiments" onclick='goto(this.id)'> Experiments</div></li>
+					
+				</ul>
+		</nav>
+	  </header> 
+
+<script>
+	document.getElementById("hamburger-icon").onclick = myFunction;
+	function myFunction() {
+	
+	  $(".menu").toggle();
+	
+	}
+</script>
+
+<!-- 
+<div id="app-header"></div>
+<script src="header.js"></script> -->
 
 <div class="aligned">
  

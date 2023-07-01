@@ -1,10 +1,11 @@
-
+var rendered = false;
 
 let appHeader = `    
 
-	
-	<nav>
-	    <img id="logo" src="media/logo.png" />
+	<header>
+    <img id="logo" src="media/logo.png" />
+	  
+    <nav>  
 	    <button id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
             <ul class="menu">
                 <li> <div  id ="index" onclick='goto(this.id)'>     Home</div></li>
@@ -13,51 +14,20 @@ let appHeader = `
                 <li> <div id="experiments" onclick='goto(this.id)'> Experiments</div></li>
                 
             </ul>
-        </nav>
+    </nav>
+  </header>      
 `;
 
-document.getElementById("app-header").innerHTML = appHeader;
 
 
 
-//get the name of the current page
-var path = window.location.pathname;
-var page = path.split("/").pop();
-var name = page.split(".")[0];
-console.log( name );
-//get the button with that name
-var Button = document.getElementById(name);
-//change that color of the button
-Button.style.border="3px solid black";
+
+  if (!rendered) {
+    rendered = true;
+    document.getElementById("app-header").innerHTML = appHeader;
+
+  }
 
 
 
-//To go to the page when the link from the menu is clicked
- function goto(buttonID){
-        file_name =buttonID+".html"	
-	window.open(file_name,"_self")
-}
-
-
-//toggle display of menu
-
-$("#hamburger-icon").click(
-  function(){
-  $(".menu").toggle();
-});
-
-
-
-// const hamburgerIcon = document.getElementById('hamburger-icon');
-// const menu = document.getElementsByClassName('menu')[0];
-
- 
-// hamburgerIcon.addEventListener('click', function() {
-//   const computedStyle = getComputedStyle(menu);
-//   if (computedStyle.display === "none") {
-//     menu.style.display = "block";
-//   } else {
-//     menu.style.display = "none";
-//   }
-// });
 
