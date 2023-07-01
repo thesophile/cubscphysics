@@ -45,15 +45,4 @@ Button.style.border="3px solid black";
 
 // }
 
-// const hamburgerIcon = document.getElementById('hamburger-icon');
-// const menu = document.getElementsByClassName('menu')[0];
 
- 
-// hamburgerIcon.addEventListener('click', function() {
-//   const computedStyle = getComputedStyle(menu);
-//   if (computedStyle.display === "none") {
-//     menu.style.display = "block";
-//   } else {
-//     menu.style.display = "none";
-//   }
-// });
