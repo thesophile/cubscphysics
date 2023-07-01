@@ -44,14 +44,6 @@ function goto(buttonID){
 	window.open(file_name,"_self")
 }
 
-const menu = document.getElementsByClassName("menu")[0];
-const hamburger = document.getElementById("hamburger-icon");
 
-// toggle display of menu
-	hamburger.onclick = myFunction;
-	
-	function myFunction() {
-	  		menu.toggle();
-	}
 
 
