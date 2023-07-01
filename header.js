@@ -1,7 +1,7 @@
 
-setheader();
+// setheader();
 
-function setheader(){
+// function setheader(){
 let appHeader = `    
 
 	<header>
@@ -22,7 +22,7 @@ let appHeader = `
 
 document.getElementById("app-header").innerHTML = appHeader;
 
-}
+// }
 
 // get the name of the current page
 getpage();
