@@ -20,9 +20,7 @@ let appHeader = `
   </header>      
 `;
 
-
-
-    document.getElementById("app-header").innerHTML = appHeader;
+document.getElementById("app-header").innerHTML = appHeader;
 
 }
 

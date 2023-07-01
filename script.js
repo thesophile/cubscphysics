@@ -1,4 +1,6 @@
 // get the name of the current page
+getpage();
+function getpage(){
 var path = window.location.pathname;
 var page = path.split("/").pop();
 var name = page.split(".")[0];
@@ -7,7 +9,7 @@ console.log( name );
 var Button = document.getElementById(name);
 //change that color of the button
 Button.style.border="3px solid black";
-
+}
 
 
 // To go to the page when the link from the menu is clicked
