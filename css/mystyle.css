@@ -18,6 +18,10 @@ body {
   
 }
 
+.menu div{
+  cursor: pointer;
+}
+
 
 /* small screen */
 @media only screen and (max-width: 770px ) {
@@ -41,8 +45,8 @@ body {
     margin-bottom: 4px; 
   }
 
-    #logo{
-       width:80%;
+    #banner{
+       height: 40px;
     }
     
 
@@ -82,8 +86,8 @@ body {
         display: none;
         }
 
-        #logo{
-        width:400px;
+        #banner{
+        height: 50px;
         }
 
         nav li {

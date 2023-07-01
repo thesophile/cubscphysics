@@ -5,7 +5,7 @@ function setheader(){
 let appHeader = `    
 
 	<header>
-    <img id="logo" src="media/logo.png" />
+    <img id="banner" src="media/banner.png" />
 	  
     <nav>  
 	    <button onclick="toggle()" id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
