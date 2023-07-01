@@ -11,6 +11,7 @@ Button.style.border="3px solid black";
 
 
 // To go to the page when the link from the menu is clicked
+
  function goto(buttonID){
         file_name =buttonID+".html"	
 	window.open(file_name,"_self")
@@ -19,11 +20,9 @@ Button.style.border="3px solid black";
 
 //toggle display of menu
 
-// $("#hamburger-icon").click(
-//   function(){
-//   $(".menu").toggle();
-// });
-
-
+// document.getElementById("hamburger-icon").onclick = myFunction;
+// 	function myFunction() {
+// 	  		$(".menu").toggle();	
+// 	}
 
 
