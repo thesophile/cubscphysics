@@ -8,7 +8,7 @@ console.log( name );
 //get the button with that name
 var Button = document.getElementById(name);
 //change that color of the button
-Button.style.border="3px solid black";
+Button.style.color="blue";
 }
 
 
