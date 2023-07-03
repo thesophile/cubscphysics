@@ -1,3 +1,5 @@
+
+// function startjs(){
 // get the name of the current page
 getpage();
 function getpage(){
@@ -25,4 +27,4 @@ function goto(buttonID){
 	  		$(".menu").toggle();
 	}
 
-
+// }
