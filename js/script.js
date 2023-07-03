@@ -1,6 +1,5 @@
-
-// function startjs(){
-// get the name of the current page
+$(document).ready(function() {
+     // get the name of the current page
 getpage();
 function getpage(){
 var path = window.location.pathname;
@@ -27,4 +26,5 @@ function goto(buttonID){
 	  		$(".menu").toggle();
 	}
 
-// }
+});
+
