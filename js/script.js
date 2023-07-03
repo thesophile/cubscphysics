@@ -12,8 +12,7 @@ console.log( name );
 //get the button with that name
 var Button = document.getElementById(name);
 //change that color of the button
-Button.style.opacity="0.5";
-Button.style.color="Blue";
+Button.style.opacity="0.3";
 }
 
 
