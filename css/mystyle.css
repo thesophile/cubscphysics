@@ -214,6 +214,7 @@ h3 {margin-top:0px;}
 
 .image-box { /*the children*/
   position:relative;
+  overflow: hidden;
   
 }
 .video-box { /*the children*/
@@ -221,10 +222,7 @@ h3 {margin-top:0px;}
   
 }
 
-.image-box:hover { /*the children*/
-  position:relative;
-  border:solid blue 4px;
-}
+
 
 .video-box:hover { /*the children*/
   position:relative;
@@ -245,8 +243,13 @@ h3 {margin-top:0px;}
   width: 300px;
   height: 300px;
   margin: 10px;
-  object-fit: cover; 
+  object-fit: cover;
+  transition: transform 0.3s ease; 
   }
+
+  .image-container img:hover {
+    transform: scale(1.2);
+    }  
   
 
   
