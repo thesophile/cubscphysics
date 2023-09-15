@@ -40,16 +40,42 @@
 
 
 <div id = "maths" class = "subs">
+
+       <div class="box">
+              <p>Semester 1</p>
+              <a href="https://t.me/the_sophile"> upload </a>
+       </div>
+
+       <div class="box">
+              <p>Semester 2</p>
+              <a href="https://t.me/the_sophile"> upload </a>
+       </div>
+
        <div class="box">
               <p>Semester 3</p>
               <a href="https://drive.google.com/file/d/1KNRGSJ6YwqIxiZbILPi1yFhH62shzFJ6/view?usp=sharing">3rd Sem Maths</a>
+       </div>
+
+       <div class="box">
+              <p>Semester 4</p>
+              <a href="https://t.me/the_sophile"> upload </a>
+       </div>
+       
+       <div class="box">
+              <p>Semester 5</p>
+              <a href="https://t.me/the_sophile"> upload </a>
+       </div>
+
+       <div class="box">
+              <p>Semester 6</p>
+              <a href="https://t.me/the_sophile"> upload </a>
        </div>
 
 </div>
 
 <div id = "chemistry" class = "subs">
 chemistry not uploaded yet. Please come back later. Or 
-<a href="https://github.com/abhinavpb-249/CU-Bsc-Physics"> contribute </a>
+<a href="https://t.me/the_sophile"> contribute </a>
 </div>
 
 <div id = "malayalam" class = "subs">
@@ -121,6 +147,28 @@ chemistry not uploaded yet. Please come back later. Or
 
 <script>
 
+// Get all elements with the class "color-button"
+const buttons = document.querySelectorAll(".btn");
+
+// Function to change the color of the clicked button
+function changeButtonColor(button) {
+  // Reset the color of all buttons to their default
+  buttons.forEach(button => {
+    button.style.backgroundColor = "";
+  });
+
+  // Set the color of the clicked button to your desired color
+  button.style.color = "black";
+  button.style.backgroundColor = "white"; // Change this to your desired color
+}
+
+// Add click event listeners to all buttons with the class "color-button"
+buttons.forEach(button => {
+  button.addEventListener("click", function() {
+    changeButtonColor(this); // Pass the clicked button to the function
+    // Your other code for this button's click event
+  });
+});
 
 
 function physics(){

@@ -6,7 +6,7 @@ let physicshtml = `
 
 
 <hr />
-<h1 id="physics">Physics </h1>
+
 
 <div class="box">
   <p>Semester 1</p>
