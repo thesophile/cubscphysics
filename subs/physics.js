@@ -33,7 +33,7 @@ let physicshtml = `
  <p>Semester 3</p>
      1.<a href="https://drive.google.com/file/d/1Csmx79UYM0Z-6oGOC5QJ8LICDAYt0Bnp/view?usp=sharing">
        Griffiths- Introduction to electrodynamics</a>
-  <br />
+  <br><br>
   2.<a href="https://drive.google.com/file/d/11ysCbqZ_brwF4G1u2-kInR4fIEoe6NXC/view?usp=sharing">
   Electricity and Magnetism [Berkeley Physics Course Vol 2]</a>
 </div>
@@ -44,10 +44,10 @@ let physicshtml = `
  <p>Semester 4</p>
      1.<a href="https://drive.google.com/file/d/1Csmx79UYM0Z-6oGOC5QJ8LICDAYt0Bnp/view?usp=sharing">
        Griffiths- Introduction to electrodynamics</a>
-  <br />
+  <br><br>
   2.<a href="https://drive.google.com/file/d/11ysCbqZ_brwF4G1u2-kInR4fIEoe6NXC/view?usp=sharing">
   Electricity and Magnetism [Berkeley Physics Course Vol 2]</a>
-  <br />
+  <br><br>
   3.<a href="https://drive.google.com/file/d/1DXu6Iuz4n5L3i_Mo3q2-r2D_QebP0eRH/view?usp=sharing">
   Electrical Technology Volume 1 By Theraja</a>
   
@@ -64,10 +64,10 @@ let physicshtml = `
       <div class="grey"> 
       1.
        Computational Physics, V.K.Mittal, R.C.Verma &amp; S.C.Gupta-Publishedn
-      <br />
+      <br><br>
       2.
       Introductory methods of numerical analysis, S.S.Shastry
-      <br />
+      <br><br>
       3.
       Introduction to Python for Engineers and Scientists by Dr.Sandeep Nagar
   </details> 
@@ -91,10 +91,10 @@ let physicshtml = `
       <div class="grey">    
       1.<a href="https://drive.google.com/file/d/1XYnQuqizvzztpwXcBpPBMOGchHXAYot4/view?usp=sharing">
        Optics by Ajoy Ghatak – 4 th edition</a>
-      <br />
+      <br><br>
       2.<a href="https://drive.google.com/file/d/1vcHm5hCAf92s52U37ZqolPQXtINk3WwI/view?usp=sharing">
       Optics by Subramaniam, Brijlal</a>
-      <br />
+      <br><br>
       3.
       Introduction to Optics by Frank.L,Pedrotti
       </div>
@@ -106,8 +106,10 @@ let physicshtml = `
     <summary>Electronics</summary>
     <div class="grey"> 
         1. Principles of electronics - VK Mehta - 2008 edition (S. Chand)
-     <br />2. Introduction to Micro Processors - Aditya P Mathur (Tata McGarw Hill)
-     <br />3. Digital principles and applications - Leach and Malvino (Tata McGraw Hill)
+        <br><br>
+        2. Introduction to Micro Processors - Aditya P Mathur (Tata McGarw Hill)
+        <br><br>
+        3. Digital principles and applications - Leach and Malvino (Tata McGraw Hill)
       
   </details> 
   
@@ -134,8 +136,8 @@ let physicshtml = `
     <summary>Statistical Physics, Solid State Physics, Spectroscopy &amp; Photonics</summary>
       <div class="grey"> 
         1. Solid State Physics, 3rd Edn. – S. O. Pillai – New Age International Pvt. Ltd.
-    <br />2. Fundamentals of Molecular Spectroscopy, 4th Edn. – Colin N. Banwell and Elaine M. McCash–McGraw-Hill
-    <br />3. A Text Book of Optics, 25thEdn. – Subrahmanyam and Brijlal, S. Chand &amp; Company Ltd., 2016
+    <br><br>2. Fundamentals of Molecular Spectroscopy, 4th Edn. – Colin N. Banwell and Elaine M. McCash–McGraw-Hill
+    <br><br>3. A Text Book of Optics, 25thEdn. – Subrahmanyam and Brijlal, S. Chand &amp; Company Ltd., 2016
     
   </details> 
   
@@ -145,8 +147,8 @@ let physicshtml = `
     <summary>Nuclear Physics And Particle Physics</summary>
       <div class="grey"> 
         1. Modern Physics, 2ndEdn. – Kenneth S. Krane – John Wiley &amp; sons
-    <br />2. Atomic and Nuclear Physics – An Introduction, 3rdEdn. – T.A. Littlefield and N. Thorley–Springer
-    <br />3. Concepts of Modern Physics, 7thEdn. – Arthur Beiser – Tata McGraw-Hill
+    <br><br>2. Atomic and Nuclear Physics – An Introduction, 3rdEdn. – T.A. Littlefield and N. Thorley–Springer
+    <br><br>3. Concepts of Modern Physics, 7thEdn. – Arthur Beiser – Tata McGraw-Hill
     
   </details> 
   
@@ -156,8 +158,8 @@ let physicshtml = `
     <summary>Relativistic Mechanics And Astrophysics</summary>
       <div class="grey"> 
           1. An Introduction to Mechanics, 1st Edn. – Daniel Kleppner and Robert J. Kolenkow –McGraw-Hill
-      <br />2. Modern Physics, 2nd Edn. – Kenneth S. Krane – John Wiley &amp; sons
-      <br />3. Astrophysics is Easy : An Introduction for the Amateur Astronomer – Mike Inglis –Springer
+      <br><br>2. Modern Physics, 2nd Edn. – Kenneth S. Krane – John Wiley &amp; sons
+      <br><br>3. Astrophysics is Easy : An Introduction for the Amateur Astronomer – Mike Inglis –Springer
     
   </details> 
   
@@ -167,9 +169,9 @@ let physicshtml = `
     <summary>Biomedical Physics(Elective)</summary>
       <div class="grey"> 
                1. Biophysics: An Introduction“ by Rodney Cotterlie ,Wiley
-           <br />2. Handbook of Biomedical Instrumentation”, R S Khandpur, Tata Mcgraw Hill
-           <br />3. “Biomedical Instrumentation and measurement”, Leslie Cromwell, Prentice hall of India
-           <br />4. Lasers in Medicine - An Introductory Guide, Gregory Absten, Springer Science Publications
+           <br><br>2. Handbook of Biomedical Instrumentation”, R S Khandpur, Tata Mcgraw Hill
+           <br><br>3. “Biomedical Instrumentation and measurement”, Leslie Cromwell, Prentice hall of India
+           <br><br>4. Lasers in Medicine - An Introductory Guide, Gregory Absten, Springer Science Publications
     
   </details> 
   
@@ -179,7 +181,7 @@ let physicshtml = `
     <summary>Nanoscience And Technology(Elective)</summary>
       <div class="grey"> 
                1. Introduction to Nanoscience &amp; Nanotechnology by K. K. Chattopadhyaya and A. N.Banerjee, Publisher: PHI Learning and Private Limited
-           <br />2. Nanotechnology, Rakesh Rathi, S Chand &amp; Company, New Delhi
+           <br><br>2. Nanotechnology, Rakesh Rathi, S Chand &amp; Company, New Delhi
     
   </details> 
   
