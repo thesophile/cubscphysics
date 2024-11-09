@@ -29,7 +29,7 @@ let appHeader = `
     align-items:center;
   }
 
-  h1{
+  .top_banner h1{
   color:black;
   }
   </style>   
