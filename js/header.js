@@ -5,7 +5,10 @@ function setheader(){
 let appHeader = `    
 
 	<header>
-    <img id="banner" src="media/banner.png" />
+    <div class="top_banner">
+      <img id="banner" src="media/banner_logo.png" />
+      <h1>CU BSc Physics</h1>
+    </div>
 	  
     <nav>  
 	    <button onclick="toggle()" id="hamburger-icon"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
@@ -17,7 +20,19 @@ let appHeader = `
                 
             </div>
     </nav>
-  </header>      
+  </header>   
+
+  <style>
+  .top_banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  h1{
+  color:black;
+  }
+  </style>   
 `;
 
 document.getElementById("app-header").innerHTML = appHeader;
